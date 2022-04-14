@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Olympic Gym</title>
+    <!-- font awesome-->
+    <script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
+    <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--jquery link cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--bootstrap link cdn -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Google font-->
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+ <!-- main  css file-->
+ <link rel="stylesheet" href="css/olympic.css"/>
+ <link rel="stylesheet" href="css/aos-master/dist/aos.css" />
+</head>
+
+<body>
+    <!--- Start the header-->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img  src="images/icons8-olympic-rings-80.png" alt="logo"/>
+                <span>OLYMPIC <strong style="color: white;">GYM</strong></span>
+            </a>
+
+              <nav>     
+            <i class=" fas fa-bars toggle-menu"></i>
+                <ul class="nav">
+                    <!-- <li class="slide"</li>    -->
+                    <li><a class="is-active" href="#home">HOME</a></li> 
+                    <li><a href="#about">ABOUT US</a></li> 
+                    <li><a href="#classes">CLASSES</a></li> 
+                    <li><a href="#schedule">SCHEDULE</a></li> 
+                    <li><a href="#contact">CONTACT US</a></li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End the header-->
+
+ <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Start the Home  section-->
+
+    <section id="home" class="Home">
+    <div class ="text ">
+     
+        <h2><span style="color: #0021c5;">Shape</span> Your Body<br> With Clean Mind</h2>
+        <p> IN Olympic Gym You will get Your body fit<br><br>
+            We Offer As Well Hardcore Strength Machines,
+            <br><br> Curve Treadmills,Crossfit and Boxing Studio.</p>
+    </div>
+    <div class="image">
+        <img src="images/new5.jpg" alt="">
+     </div>
+
+     <div class="image">
+        <img src="images/new6.jpg" alt="">
+    </div>
+
+     <div class="image">
+        <img src="images/new3.jpg" alt="">
+    </div>
+
+    <a href="#query" id="btnQuery" style="letter-spacing: 2px"  class=" col-mid-6 btn btn-outline-warning">Query</a>
+
+      <form  method="post"  onsubmit="">
+        <div id="query" class="form">
+          <div class="title">Welcome</div>
+          <div class="subtitle">Let's Know Your Program!</div>
+          <div class="input-container ic1">
+            <input id="YourID" class="input" type="number" placeholder=" " required />
+            <div class="cut"></div>
+            <label for="YourID" class="placeholder">Enter ID</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="phoneNumber" class="input" type="text" placeholder=" " required/>
+            <div class="cut"></div>
+            <label for="phoneNumber" class="placeholder">Phone Number</label>
+          </div>
+          <button  type="button" id="sub" class="submit" onclick="traineeData();">submit</button>
+          <a href="#demo" type="button" class="submit hide" style="background-color: #ffc107;" id="sh">Show Data</a>
+        </div>
+      </form>
+      
+      
+  
+  <div  class="information" id="demo">
+   <div id="show">
+
+  </div>
+ 
+   </div>
+      <!-- Next and previous buttons // if i will use manual slide and  have manual code  -->
+  <a class="prev" onclick="plusDivs(-1)">P<br>r<br>e<br>v</a>
+  <a class="next" onclick="plusDivs(1)">N<br>e<br>x<br>t</a>
+</section>
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+ <!-- Start the About  section -->
+
+<section  id="about" class=" container-fluid About">
+
+    <div class="row AboutRow">
+        <div class="col-sm-6 col-md-3 shape1" data-aos="zoom-in"></div>
+        <div class="col-sm-6 col-md-3 shape2" data-aos="zoom-in"></div>
+        <div class="col-sm-6 col-md-6 words">
+         <h2><strong>ABOUT US</strong></h2>
+         <h3>Together To Performance</h3>
+         <P> We’re not just a gym with the latest equipment, 
+             we also provide you with various classes that will help you achieve your fitness goals.<br><br>
+             <span style="color:#ffc107; font-size:21px;">Olympic</span> Gym is the first Gym in Suez that
+              helping you achieve your weight loss and muscle goals and Offering you various packages that suit you best.<br><br>
+              We Providing you with the top-notch classes and newest equipment , Our trainers are highly qualified and know what they’re doing
+              and our most important goal was to create a welcoming atmosphere and community in which everyone feels a sense of belonging.
+            </P>
+            <br>
+             <div class="row AboutIcon">
+                 <div  class="col-6 col-sm-4 divIcon">
+                   <div class="wow " data-aos="fade-up" >
+                    <i class="fas fa-dumbbell ico"></i>
+                    <div class="textIcon">
+                    <h5>Body Transformation</h5>
+                    <p>Get Your Body In The Best Shape</p>
+                    </div>
+                    </div>
+                </div>
+
+                 <div   class="col-6 col-sm-4 divIcon ">
+                  <div class="wow "  data-aos="fade-up"  >
+                    <i class="fas fa-running ico"></i>
+                    <div class="textIcon">
+                        <h5>Work Out Routines</h5>
+                        <p> loss your weight and strong Your muscles</p>
+                        </div>
+                  </div>
+                    </div>
+
+                    <div class="rightIcon">
+                    <div    class="col-6 col-sm-4  divIcon ">
+                      <div class="wow "  data-aos="fade-up"  >
+                        <i class=" fas fa-edit ico"></i>
+                        <div class="textIcon">
+                            <h5>Fast Following</h5>
+                            <p> Our Trainers Writes their Notes</p>
+                            </div>
+                      </div>
+                        </div>
+                        <div   style="width: 64%;" class="col-6 col-sm-4  under divIcon ">
+                          <div class="wow "   data-aos="fade-up" >
+                            <i class=" 	fas fa-fire ico"></i>
+                            <div class="textIcon">
+                                <h5>CrossFit Workouts</h5>
+                                <p> It gives you the biggest bang</p>
+                                </div>
+                          </div>
+                            </div>
+                        </div>
+                 
+             </div>
+        </div>
+
+</div>
+</section>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start  the Classes  section-->
+
+<section id="classes" class="Classes container-fluid">
+     <div class="classText">
+         <h2>Olympic Gym Classes</h2>
+         <p> Our Classes Aim To Transform Your Body and Get You In Shape Fast</p>
+     </div>
+         <div class="row classCards">
+           <div class="col-md-4">
+            <div class="card" >
+                <div class="card-body" style="background-image: url(./images/Boxinghh.jpg)">
+                  <div class="show">
+                  <h5 class="card-title">BOXING</h5>
+                  <p class="card-text"> Boxing is as much a mental game as it is a physical one and the inner struggle is a common theme in the sport of boxing</p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card" >
+            <div class="card-body" style="background-image: url(./images/Gymmmm.jpg)">
+              <div class="show">
+                <h5 class="card-title">GYM</h5>
+                <p class="card-text">Help you control your weight,Reduce your risk of heart diseases and Improve your mental health and mood.</p>
+              </div>
+              </div>
+           </div>
+        </div>
+           <div class="col-md-4">
+            <div class="card" >
+                <div class="card-body" style="background-image: url(./images/Kick.jpg)">
+                  <div class="show">
+                  <h5 class="card-title">KICK BOXING</h5>
+                  <p class="card-text">A great exercise to learn self-defense and the quickest way to get fit</p>        
+                </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card">
+                <div class="card-body" style="background-image: url(./images/Zumba.jpg)">
+                  <div class="show">
+                  <h5 class="card-title">ZUMBA</h5>
+                  <p class="card-text"> 
+                    Dance to great music with great people and burn a ton of calories.
+                  </p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card">
+                <div class="card-body" style="background-image: url(./images/crossfit22.jpg)">
+                  <div class="show">
+                  <h5 class="card-title">CROSS FIT</h5>
+                  <p class="card-text">A CrossFit workout may include dynamic exercises like: 
+                    plyometric jumping,
+                    Olympic weightlifting and explosive bodyweight movements.
+                </p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4"> 
+            <div class="card">
+            <div class="card-body" style="background-image: url(./images/taykondo.jpg)">
+              <div class="show">
+              <h5 class="card-title">Taekwondo</h5>
+              <p class="card-text"> Taekwondo is known to benefit mental health through increased confidence,focus,concentration levels and self-discipline.</p>        
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="col-md-4">
+            <div class="card" >
+                <div class="card-body" style="background-image: url(./images/Karate2.jpg)">
+                  <div class="show">
+                  <h5 class="card-title">KARATE</h5>
+                  <p class="card-text">Karate practice strengthens the mind, develops composure,deeper insight into one’s mental capabilities,and more self-confidence.</p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card" >
+                <div class="card-body"  style="background-image: url(./images/SpecialClasses.jpg);">
+                  <div class="show">
+                  <h5 class="card-title">SPECIAL CLASSES</h5>
+                  <p class="card-text"> We make these classes to all our trainees for free,In these classes we do Boxing,Crossfit and Gym exercises together.</p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-4">
+            <div class="card" >
+                <div class="card-body" style="background-image: url(./images/Gymantics.jpg);">
+                  <div class="show">
+                  <h5 class="card-title">Gymnastics</h5>
+                  <p class="card-text">Children in gymnastics learn social skills,Listen to instructions, take turns, buildfriendships, and learn to work independently are all benefits of gymnastics.</p>        
+                  </div>
+                </div>
+              </div>
+           </div>
+
+         </div>
+     </div>
+</section>
+
+<div class="row  align-items-center">
+
+  <div class="col-md-4 cir">
+        <div class="content" data-aos="fade-right" data-aos-delay="300">
+        <div class="circle1"><span>1</span></div>
+        <h5> Set and Achieve Your Goals </h5> 
+      </div>
+   </div>
+
+     
+   <div class="col-md-4 cir">
+    <div class="content" data-aos="fade-down" data-aos-delay="300">
+    <div class="circle2"><span>2</span></div>
+    <h5> Get A Professional Program</h5> 
+  </div>
+</div>
+
+<div class="col-md-4 cir">
+<div class="content" data-aos="fade-left" data-aos-delay="300">
+<div class="circle3"><span>3</span></div>
+<h5> Train Your Body Very Hard</h5>
+</div>
+</div>
+
+
+  </div>
+
+
+<section id="schedule" class=" Schedule container-fluid">
+
+
+<div class="classText">
+  <h2>Olympic Gym Trainers</h2>
+  <p> We Have The Best Trainers In Suez</p>
+</div>
+
+<div  id="coaches" class="row classCards">
+
+
+  <div class="col-md-4">
+    <div class="card TrainerCard" >
+      <div class="imgBox" >
+             <img src="./images/photo_2022-02-12_13-15-24.jpg"  alt=" Trainer In Olympic Gym" class="mouse">
+            </div>
+      <div class="contentBox">
+        <h3>Ahmed Abu zEd</h3>
+        <p> CrossFit Trainer</p>
+        <div class="socialIcons">
+           <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook face"></span></a>
+           <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram insta"</span></a>
+           <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square whats"</span></a>
+         </div>
+      
+      </div>   
+      </div>
+      </div>
+
+
+ 
+    
+
+        <div class="col-md-4">
+          <div class="card TrainerCard" >
+            <div class="imgBox" >
+                   <img src="./images/Mora.jpeg"  alt=" Trainer In Olympic Gym" class="mouse">
+                  </div>
+            <div class="contentBox">
+              <h3>Mora Hakiem</h3>
+              <p> Gym Trainer</p>
+              <div class="socialIcons">
+                 <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook face"></span></a>
+                 <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram insta"</span></a>
+                 <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square whats"</span></a>
+               </div>
+            
+            </div>   
+            </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card TrainerCard" >
+                <div class="imgBox" >
+                       <img src="./images/Mora3.jpeg"  alt=" Trainer In Olympic Gym" class="mouse">
+                      </div>
+                <div class="contentBox">
+                  <h3>Mahmoud Said</h3>
+                  <p> Gym Trainer</p>
+                  <div class="socialIcons">
+                     <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook  face"></span></a>
+                     <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram  insta"</span></a>
+                     <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square  whats"</span></a>
+                   </div>
+                
+                </div>  
+                </div>
+                </div>
+            
+
+            <div class="col-md-4">
+              <div class="card TrainerCard" >
+                <div class="imgBox" >
+                       <img src="./images/photo_2022-02-12_13-15-08.jpg"  alt=" Trainer In Olympic Gym" class="mouse">
+                      </div>
+                <div class="contentBox">
+                  <h3>Ahmed Alnagar</h3>
+                  <p> Kick Boxing Trainer</p>
+                  <div class="socialIcons">
+                     <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook face"></span></a>
+                     <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram insta"</span></a>
+                     <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square whats"</span></a>
+                   </div>
+                
+                </div>   
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card TrainerCard" >
+                    <div class="imgBox" >
+                           <img src="./images/photo_2022-02-12_13-15-21.jpg"  alt=" Trainer In Olympic Gym" class="mouse">
+                          </div>
+                    <div class="contentBox">
+                      <h3>Hamdy Abu ZEd</h3>
+                      <p> Boxing Trainer</p>
+                      <div class="socialIcons">
+                         <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook face"></span></a>
+                         <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram insta"</span></a>
+                         <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square whats"</span></a>
+                       </div>
+                    
+                    </div>   
+                    </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card TrainerCard" >
+                        <div class="imgBox" >
+                               <img src="./images/photo_2022-02-12_13-15-04.jpg"  alt=" Trainer In Olympic Gym" class="mouse">
+                              </div>
+                        <div class="contentBox">
+                          <h3>Mohammed ABU Zed</h3>
+                          <p> Gym Trainer</p>
+                          <div class="socialIcons">
+                             <a href="https://www.facebook.com/profile.php?id=100029452550441" target="_blank" ><span class="fab fa-facebook face"></span></a>
+                             <a href="https://www.instagram.com/omar1khali/"  target="_blank"><span  class="fab fa-instagram insta"</span></a>
+                             <a href="https://wa.me/+2001284147290" target="_blank"><span class="fab fa-whatsapp-square whats"</span></a>
+                           </div>
+                        
+                        </div>   
+                        </div>
+                        </div>
+</div>
+
+
+   <div class="progress row">
+
+    <div class="classText">
+      <h2 style="color: #fff;">Olympic Gym Facts</h2>
+      
+    </div>
+    
+     <div  class=" t-1 col-md-4 Facts" style="background-color: #4c87ff;">
+      <img  class="iccon" src="./images/Trainee (1).png"></img>
+      <div class="word">
+        <span class="counter" data-target="2000">0</span>
+        <hr>
+        <p>Gym Members</p>
+     </div>
+   </div>
+
+     <div class=" t-1 col-md-4 Facts" style="background-color: #e63a34;">
+      <img  class="iccon" src="./images/personal.png"></img>
+      <div class="word">
+      <span class="counter" data-target="20">0</span>
+      <hr>
+      <p>Gym Trainers</p>
+   </div>
+   </div>
+
+   <div class=" t-1 col-md-4 Facts" style="background-color: #1cb5a3;">
+    <img  class="iccon" src="./images/muscle.png"></img>
+    <div class="word">
+    <span class="counter" data-target="30">0</span>
+    
+    <hr>
+    <p>Gym Classes</p>
+ </div>
+ </div>
+
+ <div class=" t-1 col-md-4 Facts" style="margin-right: 30px; background-color: #5851a7;">
+  <img  class="iccon" src="./images/gym.png"></img>
+   <div class="word">
+  <span class="counter" data-target="800">0</span>
+  <hr>
+  <p>Gym Equipment</p>
+   </div>
+</div>
+</div>
+   
+  <div class="TopTrainee">
+
+    <div class="classText">
+      <h2 style="color: #ffffff;">Our Top Trainees</h2>
+      <p> For This Month : They are our Heros 🔥</p>
+      
+    </div>
+    
+    <div id="top" class="row classCards">
+     
+      <div class="col-md-4" data-aos="fade-down" data-aos-delay="300" style="margin-top: -33px;">
+        <div class="card TrainerCard" >
+          <div class="imgBox" >
+           <img src="./images/omarKhalid.jpeg"  alt=" Trainer In Olympic Gym" class="mouse">
+          </div>
+         <div class="contentBox">
+           <h3>Omar Khalid</h3>
+           <p> Boxing Trainee</p>
+           <p>12 Points</p>
+         </div>   
+       </div>
+      </div>
+      
+      <div class="col-md-4 dream" data-aos="fade-up" data-aos-delay="300">
+      <div class="card TrainerCard" >
+          <div class="imgBox" >
+           <img src="./images/Atef.jpeg"  alt=" Trainer In Olympic Gym" class="mouse">
+          </div>
+         <div class="contentBox">
+           <h3> Mohamed Atef</h3>
+           <p> Gym Trainee</p>
+           <p>12 Points</p>
+         </div>   
+       </div>
+      </div>
+
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+
+        <div class="box footer-gallery">
+        
+          <img src="./images/photo_2022-02-16_17-04-08.jpg" alt="" />
+         
+        </div>
+      </div>
+    
+</div>
+ 
+  </div>
+ </section>
+
+
+
+ <section id="contact" class=" container-fluid Contact">
+  
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3><i>Contact Us</i></h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="whatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Olympic Gym is the first Gym in Suez that helping you achieve your weight loss and muscle goals and Offering you various packages that suit you best.
+        </p>
+      </div>
+      <div class="box findus">
+        <h5><i>Our Goals</i></h5>
+        <ul class="links">
+          <li><p>Change The Game</p></li>
+          <li><p>Build With Science</p></li>
+          <li><p>Together To Performance</p></li>
+          <li><p>No Hope.No Problem</p></li>
+        
+          
+        </ul>
+      </div>
+      <div class="box findus">
+        <h5><i>Find Us</i></h5>
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt,Nasr city,Street Number 220</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt, Suez, PortTawfik city</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Business Hours: From 10:00 To 22:00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+20123456789</span>
+            <span>+20198765432</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="box footer-gallery">
+        
+        <img src="./images/Logo333.jpeg" alt="" />
+       
+      </div>
+     </div>
+    <p class="copyright">Made By => TOHAMIII</p>
+  </div>
+  <!-- End Footer -->
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+<!-- java script bootstrap link cdn-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+<script src="scripts/olympic.js"></script>
+<script src="css/aos-master/dist/aos.js"></script> 
+<script>
+  AOS.init();
+</script>
+<script>
+AOS.init({
+  offset: 200,
+  duration: 800,
+  easing: 'ease-out-quad',
+  delay: 100,
+});
+</script>
+</body>
+</html>
