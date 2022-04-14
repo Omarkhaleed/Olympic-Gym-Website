@@ -12,7 +12,7 @@ Olympic Gym Website Showing all the features of the gym such as Information abou
 - Based on API and connected to our Gymnasium System
 
 
-## Video and Images
+## Video 
 - https://shortest.link/3qTr
 ## Tech Stack
 
