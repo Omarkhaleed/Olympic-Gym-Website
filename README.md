@@ -1,7 +1,7 @@
 
 # Olympic Gym Website
 > Olympic Gym Website Showing all the features of the gym such as Information about the gym : Coaches ,Top Trainees, Sports , Equipments and Progress...
-> Video demo [_here_](https://drive.google.com/file/d/1d6yeeYY1owEakF_f52mkU0XbCt5TfpoY/view?usp=share_link).
+>- Video demo [_here_](https://drive.google.com/file/d/1d6yeeYY1owEakF_f52mkU0XbCt5TfpoY/view?usp=share_link).
 
 ## Table of Contents
 * [General Info](#general-information)
