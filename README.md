@@ -32,7 +32,7 @@
 - Small Function : Based on API and connected to our Gymnasium System
 
 ## Screenshots
-![Example screenshot](./imges/Screen.png)
+![Example screenshot](./images/Screen.png)
 
 
 ## Project Status
